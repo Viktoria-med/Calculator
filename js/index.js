@@ -16,14 +16,22 @@ function opersPressed(ev) {
 
 document.querySelector('.reset').addEventListener('click', reset);
 
-     function reset() {
-         display.value = " ";          
+function reset() {
+    display.value = " ";          
+}
+
+document.querySelector('.clear').addEventListener('click', clear);
+
+function clear() {
+    display.value = display.value.slice(0, display.value.length -1);
 }
 
 document.querySelector('.eq').addEventListener('click', calculat);
 
-    function calculat() {
-         display.value = eval(display.value);
-    }          
+function calculat() {
+    display.value = eval(display.value);
+    }  
+    
+    
 
 
